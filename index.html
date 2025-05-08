@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CafeGluppVinoteca</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('images/fondo-lateral.jpg') repeat-y left,
+                  url('images/fondo-lateral.jpg') repeat-y right;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+    }
+
+    .green {
+      color: rgb(2, 247, 2);
+    }
+
+    .wine {
+      color: #c20000;
+    }
+
+    .layout {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px 0;
+    }
+
+    .side-column {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .side-column img {
+      width: 230px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    .central-content {
+      background-color: #8B4513;
+      width: 40%;
+      padding: 40px 20px;
+      border-radius: 0 0 10px 10px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .central-content h1 {
+      margin: 0 0 30px 0;
+    }
+
+    .menu-section {
+      margin-bottom: 30px;
+    }
+
+    .menu-section h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .menu-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-section ul li {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="side-column">
+      <img src="images/imagen_churros.jpg" alt="Decoración 1" />
+      <img src="images/imagen_tortitas.jpg" alt="Decoración 2" />
+    </div>
+
+    <div class="central-content">
+      <h1>
+        <span class="green">Cafe</span>
+        <span class="wine">Glupp</span>
+        <span class="green">Vinoteca</span>
+      </h1>
+
+      <div class="menu-section">
+        <h2>Desayunos</h2>
+        <ul>
+          <li>Café con tostada - 2,50€</li>
+          <li>Mollete jamón y tomate - 3,00€</li>
+          <li>Bollería y café - 2,80€</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h2>Infusiones</h2>
+        <ul>
+          <li>Té verde - 1,80€</li>
+          <li>Manzanilla - 1,80€</li>
+          <li>Poleo menta - 1,80€</li>
+        </ul>
+      </div>
+
+      <div class="menu-section">
+        <h2>Cócteles</h2>
+        <ul>
+          <li>Mojito - 6,00€</li>
+          <li>Caipiriña - 6,50€</li>
+          <li>Vermut especial - 3,50€</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side-column">
+      <img src="images/logo.jpg" alt="Decoración 3" />
+      <img src="images/pizza.jpg" alt="Decoración 4" />
+    </div>
+  </div>
+</body>
+</html>
